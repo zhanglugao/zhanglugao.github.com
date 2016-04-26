@@ -12,6 +12,10 @@
   </head>
   <body>
 
+	<canvas id='canvas' width='400' height='300'>
+		Your browser doesn't support the HTML5 element canvas.
+	</canvas>
+  
     哈哈哈哈哈哈哈哈哈哈哈哈
 	H5游戏即将上线
 	敬请期待。
@@ -19,4 +23,25 @@
 
   
   </body>
+    <script type="text/javascript">
+	var ctx;
+	ctx=document.getElementById("canvas").getContext("2d");
+	var x=100;
+	var y=50;
+	var w=100;
+	var h=100;
+	
+	
+	
+	
+	//stroke style
+	ctx.lineWidth=5;
+	ctx.strokeStyle="rgb(255,0,0)";
+	
+	//fill stype
+	ctx.fillStyle="rgb(0,0,255)";
+	
+	ctx.strokeRect(x,y,w,h);
+	ctx.fillRect(x,y,w,h);
+  </script>
 </html>
