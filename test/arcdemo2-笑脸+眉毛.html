@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Zhanglugao.GitHub.com by zhanglugao</title>
+	<meta name="baidu-site-verification" content="7Z5Yhz0Icu" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+	<canvas id='canvas' width='400' height='300'>
+		Your browser doesn't support the HTML5 element canvas.
+	</canvas>
+  </body>
+  <script type="text/javascript">
+		function init(){
+			var ctx=document.getElementById("canvas").getContext("2d");
+			ctx.beginPath();
+			ctx.strokeStyle="rgb(255,0,0)";
+			//ctx.lineWidth=5;
+			ctx.arc(215,200,65,0.2*Math.PI,0.8*Math.PI,false);
+			//arc 参数解释 
+			//前两个为圆心的水平和垂直坐标（页面左上角为0,0）
+			//第三个参数为 圆的半径 的大小
+			//第四第五个参数为圆的起始角度和结束角度 （整圆的弧度 为2*Math.PI）
+			//第六个参数圆的相对方向 false 为顺时针  true为逆时针（妈的智障！竟然这样定义 多难记）
+			//ctx.closePath();	//加上该句会闭合半圆  不加则是开口的
+			ctx.stroke();
+			ctx.beginPath();
+			ctx.arc(180,175,25,1.2*Math.PI,1.8*Math.PI,false);
+			ctx.stroke();
+			ctx.beginPath();
+			ctx.arc(250,175,25,1.2*Math.PI,1.8*Math.PI,false);
+			ctx.stroke();
+		}
+		init();
+  </script>
+</html>
