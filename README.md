@@ -1,3 +1,2 @@
 # zhanglugao.github.com
-博客哦
-地址已经搞定了
+H5小游戏制作哦 我会加快进度的啦
